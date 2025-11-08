@@ -93,15 +93,6 @@ Aplikasi ini mengimplementasikan konsep MVC (Model-View-Controller), authenticat
 
 ---
 
-## 🚀 Cara Instalasi
-
-### Prasyarat
-- PHP >= 8.2
-- Composer
-- Node.js & NPM
-- MySQL
-- Git
-
 ## 👥 Login Credentials
 
 Setelah seeding, gunakan akun berikut:

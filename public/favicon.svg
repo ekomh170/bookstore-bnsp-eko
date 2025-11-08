@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="32" fill="#DC143C"/>
+
+  <!-- Book Shape -->
+  <g transform="translate(16, 12)">
+    <!-- Book Pages (White) -->
+    <rect x="4" y="2" width="24" height="36" rx="2" fill="#FFFFFF"/>
+
+    <!-- Book Cover Edge (Dark Red) -->
+    <path d="M 2 4 L 2 38 C 2 39 3 40 4 40 L 4 2 C 3 2 2 3 2 4 Z" fill="#B71C1C"/>
+
+    <!-- Page Lines -->
+    <line x1="8" y1="10" x2="24" y2="10" stroke="#DC143C" stroke-width="1" stroke-linecap="round"/>
+    <line x1="8" y1="16" x2="24" y2="16" stroke="#DC143C" stroke-width="1" stroke-linecap="round"/>
+    <line x1="8" y1="22" x2="24" y2="22" stroke="#DC143C" stroke-width="1" stroke-linecap="round"/>
+    <line x1="8" y1="28" x2="20" y2="28" stroke="#DC143C" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Letter "E" for Eko -->
+    <text x="16" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC143C" text-anchor="middle">E</text>
+  </g>
+</svg>

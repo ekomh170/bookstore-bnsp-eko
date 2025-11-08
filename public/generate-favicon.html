@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Favicon ICO</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Background Circle (Red)
+        ctx.fillStyle = '#DC143C';
+        ctx.beginPath();
+        ctx.arc(16, 16, 16, 0, 2 * Math.PI);
+        ctx.fill();
+
+        // Book Shape (White)
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(8, 6, 12, 18);
+
+        // Book Edge (Dark Red)
+        ctx.fillStyle = '#B71C1C';
+        ctx.fillRect(7, 6, 1, 18);
+
+        // Page Lines
+        ctx.strokeStyle = '#DC143C';
+        ctx.lineWidth = 0.5;
+
+        ctx.beginPath();
+        ctx.moveTo(10, 10);
+        ctx.lineTo(18, 10);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(10, 13);
+        ctx.lineTo(18, 13);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(10, 16);
+        ctx.lineTo(18, 16);
+        ctx.stroke();
+
+        // Letter E
+        ctx.fillStyle = '#DC143C';
+        ctx.font = 'bold 8px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('E', 14, 22);
+
+        // Download as PNG (can be converted to ICO)
+        console.log('Canvas ready. Right-click and save as PNG, then convert to ICO online.');
+        console.log('Or use online converter: https://convertio.co/png-ico/');
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from '@tailwindcss/vite';
+// Removed tailwindcss import - application uses Bootstrap 5 via CDN
 
 export default defineConfig({
     plugins: [
@@ -8,6 +8,6 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
-        tailwindcss(),
+        // Removed tailwindcss() plugin - not used in this application
     ],
 });

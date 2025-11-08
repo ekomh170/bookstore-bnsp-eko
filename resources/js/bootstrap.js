@@ -1,4 +1,4 @@
-import axios from 'axios';
-window.axios = axios;
+// Bootstrap JS file
+// Kosong karena tidak menggunakan Axios atau library JS lainnya
+// Aplikasi menggunakan traditional form submission
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

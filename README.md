@@ -116,28 +116,6 @@ Setelah seeding, gunakan akun berikut:
 
 ---
 
-## 📸 Screenshot Aplikasi
-
-### Homepage
-Halaman utama menampilkan buku terbaru dan terlaris
-
-### Admin Dashboard
-Dashboard dengan statistik pendapatan, pesanan, dan grafik
-
-### Katalog Buku
-Daftar buku dengan filter kategori dan pencarian
-
-### Detail Buku
-Informasi lengkap buku dengan tombol tambah ke keranjang
-
-### Keranjang Belanja
-Daftar item yang akan dibeli dengan update jumlah
-
-### Checkout
-Form pengisian data pengiriman dan metode pembayaran
-
----
-
 ## 🔄 Flow Aplikasi
 
 ### User Flow (Pembelian)

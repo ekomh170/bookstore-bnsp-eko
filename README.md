@@ -1,59 +1,224 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Bookstore BNSP - Eko Haryono
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi toko buku online berbasis web yang dibangun dengan Laravel 12 dan Bootstrap 5 untuk ujian sertifikasi BNSP (Badan Nasional Sertifikasi Profesi).
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-12.0-red?style=flat&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.2-blue?style=flat&logo=php)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?style=flat&logo=bootstrap)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Tentang Aplikasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Bookstore BNSP adalah aplikasi e-commerce untuk toko buku yang menyediakan fitur lengkap untuk:
+- **User (Pelanggan)**: Browse buku, keranjang belanja, checkout, upload bukti pembayaran, tracking pesanan
+- **Admin**: Dashboard statistik, CRUD buku & kategori, manajemen pesanan & user, kelola pesan kontak
 
-## Learning Laravel
+Aplikasi ini mengimplementasikan konsep MVC (Model-View-Controller), authentication & authorization, CRUD operations, file upload, dan transaction management.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur Utama
 
-## Laravel Sponsors
+### 👤 Fitur User (Pelanggan)
+- ✅ Registrasi dan Login
+- ✅ Browse katalog buku dengan filter & search
+- ✅ Detail buku lengkap (cover, deskripsi, harga, stok)
+- ✅ Tambah buku ke keranjang belanja
+- ✅ Checkout dengan form pengiriman
+- ✅ Upload bukti pembayaran (Transfer/COD/E-Wallet)
+- ✅ Tracking status pesanan
+- ✅ Batalkan pesanan (jika belum diproses)
+- ✅ Kirim pesan ke admin via form kontak
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 👨‍💼 Fitur Admin
+- ✅ Dashboard dengan statistik real-time
+- ✅ CRUD Kategori Buku (Create, Read, Update, Delete)
+- ✅ CRUD Buku dengan upload cover gambar
+- ✅ Manajemen User (lihat daftar dan detail)
+- ✅ Manajemen Pesanan (update status, konfirmasi pembayaran)
+- ✅ Kelola Pesan Kontak dari pelanggan
+- ✅ Filter, search, dan pagination di semua tabel
 
-### Premium Partners
+### 🔐 Keamanan
+- ✅ Authentication dengan Laravel Breeze
+- ✅ Role-based Authorization (Admin/User)
+- ✅ Middleware untuk proteksi route
+- ✅ CSRF Protection
+- ✅ Password Hashing (bcrypt)
+- ✅ SQL Injection Prevention (Eloquent ORM)
+- ✅ File Upload Validation
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🛠️ Teknologi yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Backend
+- **Laravel 12.0** - PHP Framework
+- **PHP 8.2** - Programming Language
+- **MySQL** - Database
+- **Eloquent ORM** - Database Query Builder
 
-## Code of Conduct
+### Frontend
+- **Bootstrap 5.3.2** - CSS Framework
+- **Material Design Icons** - Icon Library
+- **Blade Template Engine** - View Layer
+- **Vite** - Asset Bundler
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Tools & Libraries
+- **Laravel Vite Plugin** - Asset Management
+- **Faker** - Dummy Data Generator
+- **PHPUnit** - Testing Framework
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📁 Struktur Database
 
-## License
+### Tabel Utama:
+1. **users** - Data user (admin & pelanggan)
+2. **kategori_buku** - Kategori buku (Fiksi, Non-Fiksi, dll)
+3. **buku** - Data buku (judul, penulis, harga, stok, cover)
+4. **keranjang** - Item di keranjang belanja user
+5. **pesanan** - Data pesanan (order header)
+6. **detail_pesanan** - Detail item pesanan (order lines)
+7. **pesan_kontak** - Pesan dari user ke admin
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Relasi:
+- User **has many** Pesanan, Keranjang, PesanKontak
+- KategoriBuku **has many** Buku
+- Buku **belongs to** KategoriBuku
+- Pesanan **has many** DetailPesanan
+- Pesanan **belongs to** User
+
+---
+
+## 🚀 Cara Instalasi
+
+### Prasyarat
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL
+- Git
+
+## 👥 Login Credentials
+
+Setelah seeding, gunakan akun berikut:
+
+### Admin
+- **Email:** admin@bookstore.com
+- **Password:** admin123
+
+### User (Pelanggan)
+- **Email:** eko@gmail.com
+- **Password:** user123
+
+---
+
+## 📸 Screenshot Aplikasi
+
+### Homepage
+Halaman utama menampilkan buku terbaru dan terlaris
+
+### Admin Dashboard
+Dashboard dengan statistik pendapatan, pesanan, dan grafik
+
+### Katalog Buku
+Daftar buku dengan filter kategori dan pencarian
+
+### Detail Buku
+Informasi lengkap buku dengan tombol tambah ke keranjang
+
+### Keranjang Belanja
+Daftar item yang akan dibeli dengan update jumlah
+
+### Checkout
+Form pengisian data pengiriman dan metode pembayaran
+
+---
+
+## 🔄 Flow Aplikasi
+
+### User Flow (Pembelian)
+1. User register/login
+2. Browse katalog buku
+3. Tambah buku ke keranjang
+4. Checkout (isi data pengiriman)
+5. Upload bukti pembayaran
+6. Admin konfirmasi pembayaran
+7. Admin update status pesanan (Diproses → Dikirim → Selesai)
+
+### Admin Flow (Manajemen)
+1. Admin login
+2. Lihat dashboard statistik
+3. Kelola buku & kategori (CRUD)
+4. Kelola pesanan (update status, konfirmasi pembayaran)
+5. Lihat daftar user dan detail pesanan
+6. Baca dan balas pesan kontak
+
+## 📝 API Endpoints
+
+### Public Routes (6)
+- `GET /` - Homepage
+- `GET /about` - About Us
+- `GET /kontak` - Contact Page
+- `POST /kontak` - Send Contact Message
+- `GET /buku` - Browse Books
+- `GET /buku/{slug}` - Book Detail
+
+### Auth Routes (3)
+- `GET /login` - Login Page
+- `POST /login` - Process Login
+- `GET /register` - Register Page
+- `POST /register` - Process Register
+- `POST /logout` - Logout
+
+### User Routes (10) - Requires Auth
+- `GET /keranjang` - View Cart
+- `POST /keranjang` - Add to Cart
+- `PATCH /keranjang/{id}` - Update Cart Item
+- `DELETE /keranjang/{id}` - Remove from Cart
+- `GET /checkout` - Checkout Page
+- `POST /checkout` - Process Order
+- `GET /pesanan` - My Orders
+- `GET /pesanan/{id}` - Order Detail
+- `POST /pesanan/{id}/upload-bukti` - Upload Payment Proof
+- `POST /pesanan/{id}/cancel` - Cancel Order
+
+### Admin Routes (24) - Requires Auth + Admin Role
+- `GET /admin` - Dashboard
+- `Resource /admin/kategori` - Kategori CRUD (7 routes)
+- `Resource /admin/buku` - Buku CRUD (7 routes)
+- `GET /admin/user` - User List
+- `GET /admin/user/{id}` - User Detail
+- `GET /admin/pesanan` - Order List
+- `GET /admin/pesanan/{id}` - Order Detail
+- `PATCH /admin/pesanan/{id}/status` - Update Order Status
+- `POST /admin/pesanan/{id}/konfirmasi` - Confirm Payment
+- `GET /admin/pesan` - Messages List
+- `GET /admin/pesan/{id}` - Message Detail
+- `DELETE /admin/pesan/{id}` - Delete Message
+
+**Total: 43 Routes**
+
+---
+
+## 🤝 Kontribusi
+
+Aplikasi ini dibuat untuk keperluan ujian sertifikasi BNSP. Kontribusi dan saran sangat diterima!
+
+---
+
+## 🙏 Acknowledgments
+
+- [Laravel Framework](https://laravel.com) - PHP Framework terbaik
+- [Bootstrap](https://getbootstrap.com) - CSS Framework
+- [Material Icons](https://fonts.google.com/icons) - Icon Library
+- BNSP - Badan Nasional Sertifikasi Profesi Indonesia
+
+---
+
+**⭐ Jika aplikasi ini bermanfaat, berikan star di GitHub!**
+
+**📚 Happy Coding & Good Luck for BNSP Certification! 🎓**
